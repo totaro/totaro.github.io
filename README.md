@@ -1,4 +1,2 @@
 # totaro.github.io
-Testsite
-
-Iframe for Azure QA Bot.
+Testsite - Iframe for testing Azure QA Bot.
