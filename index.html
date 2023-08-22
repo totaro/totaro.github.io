@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>ToTaRo - Home - Playground - FrontEnd/UX/UI - JS/HTML/CSS</title>
 </head>
-<body>
+<body><a id="top"></a>
     <header id="header">
         <div class="navbar">
             <div class="logo"><a href="">Totaro</a></div>
@@ -36,13 +36,87 @@
         </div>
     </header>
 
-    <main><section id="hero"><h1>Welcome to my portfolio!</h1><p>I am FrontEnd/UX/UI -designer and this is the spot where I play with JS/HTML/CSS. Choose from the menu to see my latest experiments.</p></section></main>
-    
-    <div class="content">
-        <p>ONE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula, lorem at euismod laoreet, augue neque cursus lectus, vitae tristique velit arcu sit amet elit. Vivamus et libero consectetur, hendrerit augue commodo, sollicitudin eros. Suspendisse potenti. Phasellus cursus metus mi, eget volutpat mi facilisis ac. Ut vel nulla in sem fringilla porta. Duis leo urna, pharetra nec dolor in, vehicula condimentum dui. Duis varius neque in dui malesuada, ac euismod nisl mollis.</p>
-        <p>Aenean maximus ante et lacus venenatis commodo. Phasellus scelerisque lacinia maximus. Nulla dignissim risus id bibendum viverra. Nunc sodales quam arcu, vel lobortis mauris fermentum non. Praesent in volutpat sem. Ut cursus, lorem eget aliquet interdum, ante ex finibus lectus, tristique malesuada elit metus vel nunc. In tempor porta lacus quis rutrum. Vestibulum eget auctor neque. Nulla non massa dignissim ipsum feugiat egestas. Integer lorem sem, dapibus non euismod non, placerat finibus turpis. Duis dapibus justo lacus, ac tincidunt eros varius vitae. Nunc fermentum at quam quis tincidunt. Aliquam molestie leo a lectus feugiat, dictum convallis ipsum mollis.</p>
-    </div>
+    <main><section id="hero"><h1>Welcome to my portfolio!</h1><p>I am FrontEnd/UX/UI -designer and this is the spot where I play with JS/HTML/CSS. Click the thumbnails for details or go straight to App from menu.</p>
+        <div class="thumps">
+            
+            <div><a href="#weather">
+                <div class="thump"></div>
+                <div class="thumptxt">Wheather</div></a>
+            </div>
 
+            <div><a href="#dictionary">
+                <div class="thump2"></div>
+                <div class="thumptxt">Dictionary</div></a>
+            </div>
+
+            
+
+            <div><a href="#digitalclock">
+                <div class="thump3"></div>
+                <div class="thumptxt">Digital Clock</div></a>
+            </div>
+
+            
+
+            <div><a href="#photogallery">
+                <div class="thump4"></div>
+                <div class="thumptxt">Photo Gallery</div></a>
+            </div>
+
+           </a>
+        </div>
+    </p></section></main>
+    <a id="weather"></a>
+    <div class="content">
+        <div class="box img2"></div>
+            <div class="box"><div class="card"><h1>Weather App</h1>
+                <p>Weather App with fetch API request from Open Weather Api (https://openweathermap.org/ https://api.openweathermap.org) including eventListener that listens keyboard (Enter) and searchbutton for wanted city to find current weather forecast. (JavaScript/Html/Css)</p>
+                <p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
+                <p class="backtotop"><a href="https://totaro.github.io/weather/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                </div>
+            </div>
+           
+       </div> 
+
+       <a id="dictionary"></a>
+    <div class="content">
+        <div class="box img3"></div>
+            <div class="box"><div class="card"><h1>English Dictionary</h1>
+                <p>English dictionary with fetch API request from Free Dictionary API (https://dictionaryapi.dev/ https://api.dictionaryapi.dev) including async/await and try..catch error handling plus eventListener that listens keyboard for wanted word to find. (JavaScript/Html/Css)</p>
+                
+                <p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
+
+                <p class="backtotop"><a href="https://totaro.github.io/dictionary/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                
+                </div>
+            </div>
+           
+       </div> 
+
+       
+       <a id="digitalclock"></a>
+    <div class="content">
+                <div class="box"><div class="card"><h1>Digital Clock </h1>
+                <p>Digital Clock using Html, Css and JavaScript</p><p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
+                <p class="backtotop"><a href="https://totaro.github.io/digitalclock/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                </div>
+            </div>
+            <div class="box img"></div>
+       </div>
+
+       <a id="photogallery"></a>
+       <div class="content">
+        <div class="box img4"></div>
+            <div class="box"><div class="card"><h1>PhotoGallery</h1>
+                <p>Using random pic service (https://picsum.photos/) to make ramdom photogallery site and using button with addEventListener to add new random imagegrid below previous images. (JavaScript/Html/Css)</p><p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
+                <p class="backtotop"><a href="https://totaro.github.io/randomphotogallery/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                </div>
+            </div>
+           
+       </div> 
+    
+         
+    
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
         <script src="index.js"></script>
 </body>

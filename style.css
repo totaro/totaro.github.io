@@ -4,6 +4,8 @@
     box-sizing: border-box ;
     font-family: 'Open Sans', sans-serif;
 }
+
+html {scroll-behavior: smooth;}
 body{
     height: 100vh;
     background-color: black;
@@ -159,21 +161,233 @@ section#hero{
     margin-bottom: 1rem;
 }
 
+/* thumps */
+
+.thumps {
+    padding: 2rem;
+    border: 1 solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: wrap;
+    gap:4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thump{
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/weather.png');
+    background-size: cover;
+    background-position: center;
+    transition: scale 0.2 ease;
+}
+
+.thump2{
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+   
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/dictionary.png');
+    transition: scale 0.2 ease;
+}
+
+.thump3{
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/digitalclock.png');
+    transition: scale 0.2 ease;
+}
+
+.thump4{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/photogallery.png');
+    transition: scale 0.2 ease;
+}
+
+.thump:hover{
+    scale: 1.10;
+    cursor: pointer;
+}
+
+.thump2:hover{
+    scale: 1.10;
+    cursor: pointer;
+}
+.thump3:hover{
+    scale: 1.10;
+    cursor: pointer;
+}
+.thump4:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.thumptxt{
+
+    padding-top: 0.7rem;
+    
+
+}
+
+.thumptxt:hover{
+    
+}
+
+.backtotop{
+    padding-top: 2rem;
+}
+
+
 /* Content */
 
 .content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     color: white;
     padding: 2rem;
     
     background-image: linear-gradient(#000816, #001524);
-    border-bottom: 1px solid white;
-    display: none;
+    border-bottom: 1px solid rgb(83, 82, 82, 0.3);
+    border-top: 1px solid rgb(83, 82, 82, 0.3);
+    
+    width:100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+  }
 
-}
+ .content .box {
+      
+    flex: 1 1 250px;
+    
+    gap:4rem;
+    
+    font-size: 2rem;
+    text-align: center;
+
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 300px;
+    height: 400px;
+    
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+   
+  }
+  .content .box h1 {
+
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .content .box p {
+
+    font-size: 1rem;
+  }
+  .content .box.img {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/digitalclock.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .content .box.img2 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/weather.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .content .box.img3 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/dictionary.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  .content .box.img4 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/photogallery.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+  
 
 /* Responsive part */
 
@@ -199,3 +413,16 @@ section#hero{
         width: unset;
     }
 }
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    background: rgb(255, 255, 255, .1);
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+    margin: 5px;
+  }
