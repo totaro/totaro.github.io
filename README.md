@@ -1,2 +1,2 @@
 # totaro.github.io
-Homepage for my Javascript/Html/Css. 
+Home for my Javascript/Html/Css playground.
