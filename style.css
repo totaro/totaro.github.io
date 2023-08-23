@@ -117,7 +117,7 @@ header {
     top: 80px;
     height: 0px;
     width: 300px;
-    background: rgb(255, 255, 255, .1);
+    background: rgba(22,28,31, 0.7);
     backdrop-filter: blur(15px);
     border-radius: 7px;
     overflow: hidden;
@@ -125,7 +125,7 @@ header {
 }
 
 .dropdown_menu.open{
-    height: 260px;
+    height: 200px;
 
 }
 
@@ -284,9 +284,6 @@ section#hero{
 
 }
 
-.thumptxt:hover{
-    
-}
 
 .backtotop{
     padding-top: 2rem;
@@ -445,14 +442,14 @@ section#hero{
 
 .thumps {
     padding: 0.1rem;
-    border: 1 solid rebeccapurple;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     display: wrap;
-    gap:1rem;
+    gap:2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
