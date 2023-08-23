@@ -164,7 +164,7 @@ section#hero{
 /* thumps */
 
 .thumps {
-    padding: 2rem;
+    padding: 1rem;
     border: 1 solid rebeccapurple;
     display: flex;
     flex-direction: row;
@@ -172,7 +172,7 @@ section#hero{
     justify-content: center;
     text-align: center;
     display: wrap;
-    gap:4rem;
+    gap:2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -188,7 +188,7 @@ section#hero{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 0 80px;
+    flex: 1 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,15 +414,71 @@ section#hero{
     }
 }
 
-.parent {
+
+
+
+  @media(max-width: 578px){
+
+  section#hero{
+    
+    height: calc(90vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    
+
+}
+#hero h1{
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+
+#hero p{
+    
+    margin-bottom: 0.8rem;
+}
+
+
+.thumps {
+    padding: 0.1rem;
+    border: 1 solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: wrap;
+    gap:1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+}
 
-  .box {
-    background: rgb(255, 255, 255, .1);
-    flex: 1 1 150px; /*  Stretching: */
-    flex: 0 1 150px; /*  No stretching: */
-    margin: 5px;
+.thump {
+
+height: 70px;
+width: 70px;
+}
+.thump2 {
+
+height: 70px;
+width: 70px;
+}
+.thump3 {
+
+height: 70px;
+width: 70px;
+}
+.thump4 {
+
+height: 70px;
+width: 70px;
+}
+
+
+
   }
