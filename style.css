@@ -125,7 +125,7 @@ header {
 }
 
 .dropdown_menu.open{
-    height: 210px;
+    height: 240px;
 
 }
 
@@ -259,6 +259,26 @@ section#hero{
     transition: scale 0.2 ease;
 }
 
+.thump4{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/todolist.png');
+    transition: scale 0.2 ease;
+}
+
 .thump:hover{
     scale: 1.10;
     cursor: pointer;
@@ -298,7 +318,7 @@ section#hero{
     color: white;
     padding: 2rem;
     
-    background-image: linear-gradient(#000816, #001524);
+    background-image: linear-gradient(#010d20, #001524);
     border-bottom: 1px solid rgb(83, 82, 82, 0.3);
     border-top: 1px solid rgb(83, 82, 82, 0.3);
     
@@ -380,6 +400,16 @@ section#hero{
     text-align: center;
     
     background-image: url('images/photogallery.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .content .box.img5 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/todolist.png');
     background-size: cover;
     background-position: center;
 
@@ -475,6 +505,11 @@ width: 70px;
 height: 70px;
 width: 70px;
 }
+.thump5 {
+
+    height: 70px;
+    width: 70px;
+    }
 
 
 
