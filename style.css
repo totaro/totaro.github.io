@@ -125,7 +125,7 @@ header {
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 250px;
 
 }
 
@@ -259,7 +259,7 @@ section#hero{
     transition: scale 0.2 ease;
 }
 
-.thump4{
+.thump5{
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
     background-color: rgba(2, 4, 26, 0.945);
