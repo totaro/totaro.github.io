@@ -195,7 +195,8 @@ section#hero{
     background-image: url('images/weather.png');
     background-size: cover;
     background-position: center;
-    transition: scale 0.2 ease;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
 }
 
 .thump2{
@@ -215,7 +216,8 @@ section#hero{
     background-size: cover;
     background-position: center;
     background-image: url('images/dictionary.png');
-    transition: scale 0.2 ease;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
 }
 
 .thump3{
@@ -236,7 +238,8 @@ section#hero{
     background-size: cover;
     background-position: center;
     background-image: url('images/digitalclock.png');
-    transition: scale 0.2 ease;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
 }
 
 .thump4{
@@ -256,7 +259,8 @@ section#hero{
     background-size: cover;
     background-position: center;
     background-image: url('images/photogallery.png');
-    transition: scale 0.2 ease;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
 }
 
 .thump5{
@@ -276,7 +280,8 @@ section#hero{
     background-size: cover;
     background-position: center;
     background-image: url('images/todolist.png');
-    transition: scale 0.2 ease;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
 }
 
 .thump6{
@@ -296,35 +301,39 @@ section#hero{
     background-size: cover;
     background-position: center;
     background-image: url('images/motions.png');
-    transition: scale 0.2 ease;
+    /*transition: scale 0.2 ease;*/
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
+
 }
 
 .thump:hover{
-    scale: 1.10;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .thump2:hover{
-    scale: 1.10;
+    transform: scale(1.05);
     cursor: pointer;
 }
 .thump3:hover{
-    scale: 1.10;
+    transform: scale(1.05);
     cursor: pointer;
 }
 .thump4:hover{
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .thump5:hover{
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .thump6:hover{
-    scale: 1.05;
+    /*scale: 1.05;*/
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .thumptxt{
