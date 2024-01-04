@@ -317,6 +317,16 @@ section#hero{
     cursor: pointer;
 }
 
+.thump5:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.thump6:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
 .thumptxt{
 
     padding-top: 0.7rem;
@@ -541,6 +551,11 @@ width: 70px;
     width: 70px;
     }
 
+.thump6 {
+
+    height: 70px;
+    width: 70px;
+    }
 
 
   }
