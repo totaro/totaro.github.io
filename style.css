@@ -50,6 +50,7 @@ header {
     padding: 0 2rem;
     background: rgb(255, 255, 255, .1);
     backdrop-filter: blur(15px);
+    z-index: 99;
 }
 
 .navbar {
@@ -60,8 +61,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 
 .navbar .logo a {
@@ -123,6 +122,7 @@ header {
     border-radius: 7px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
 }
 
 .dropdown_menu.open{
@@ -131,7 +131,7 @@ header {
 }
 
 .dropdown_menu li{
-    padding: 0.7rem;
+    padding: 0.53rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,6 +142,7 @@ header {
     display: flex;
     justify-content: center;
 }
+
 
 /* Hero */
 
@@ -155,6 +156,7 @@ section#hero{
     text-align: center;
     color: white;
     padding: 2rem;
+   
 
 }
 #hero h1{
@@ -177,6 +179,8 @@ section#hero{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
+    
 }
 
 .thump{
@@ -308,6 +312,29 @@ section#hero{
 
 }
 
+.thump7{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/lab.png');
+    /*transition: scale 0.2 ease;*/
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
+
+}
+
 .thump:hover{
     transform: scale(1.05);
     cursor: pointer;
@@ -332,6 +359,12 @@ section#hero{
 }
 
 .thump6:hover{
+    /*scale: 1.05;*/
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.thump7:hover{
     /*scale: 1.05;*/
     cursor: pointer;
     transform: scale(1.05);
@@ -464,6 +497,16 @@ section#hero{
     background-position: center;
 
   }
+
+  .content .box.img7 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/lab.png');
+    background-size: cover;
+    background-position: center;
+
+  }
   
 
 /* Responsive part */
@@ -566,6 +609,12 @@ width: 70px;
     height: 70px;
     width: 70px;
     }
+
+    .thump7 {
+
+        height: 70px;
+        width: 70px;
+        }    
 
 
   }
