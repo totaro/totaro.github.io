@@ -37,11 +37,29 @@ a:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    margin-bottom: 10px;
   }
   
   .sticky + .contentX {
     padding-top: 60px;
   }
+
+  .sticky + .main + #hero{
+    padding-top: 0px;
+    margin-bottom: 0px
+  }
+
+  .main {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    
+    flex-direction: column;
+    /* border:1px solid green; */
+    /* margin-top:120px;
+    top:200px;
+    padding-block: 2rem; */
+}
 
 /* Header */
 
@@ -148,7 +166,7 @@ header {
 
 section#hero{
 
-    height: calc(100vh - 60px);
+    height: calc(100vh - 160px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -539,9 +557,13 @@ section#hero{
 
   @media(max-width: 578px){
 
+    .main{
+        /* border: 1px solid white; */
+        height: calc(90dvh + 30px);
+    }
   section#hero{
     
-    height: calc(90vh - 60px);
+    height: calc(90dvh - 10px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,6 +571,7 @@ section#hero{
     text-align: center;
     color: white;
     padding: 2rem;
+    /* border: 1px solid white */
     
 
 }
