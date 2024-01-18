@@ -557,8 +557,8 @@ section#hero{
 
   @media(max-width: 578px){
     .main{
-        /* border: 1px solid white; */
-        height: calc(100vh -80px);
+        border: 1px solid white;
+        height: calc(80vh -60px);
     }
     .top{
         height:90px;
