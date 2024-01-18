@@ -69,6 +69,19 @@ header {
     background: rgb(255, 255, 255, .1);
     backdrop-filter: blur(15px);
     z-index: 99;
+    /* border: 5px solid red; */
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+    
+}
+#header{
+    margin-bottom: 30px;
+
 }
 
 .navbar {
@@ -560,7 +573,7 @@ section#hero{
         height: 80vh;
     } */
     .main{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         /* height: calc(100vh -60px); */
         height:80vh;
     }
