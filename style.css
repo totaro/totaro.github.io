@@ -189,6 +189,9 @@ section#hero{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+.herop {
+    padding-bottom: 0.5rem;
+}
 
 /* thumps */
 
@@ -580,7 +583,7 @@ section#hero{
     }
     #hero h1{
         font-size: 1.8rem;
-        margin-bottom: 0.4rem;
+        margin-bottom: 1rem;
     }
 
     #hero p{
