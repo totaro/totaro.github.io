@@ -1,0 +1,31 @@
+html {scroll-behavior: smooth;}
+
+
+#link{
+    /* text-decoration: none; */
+    color: #107ce7;
+    transition: .2s ease-in-out;
+}
+/* 
+a:visited{
+    color: #107ce7;
+
+}
+a:hover {
+    color: #107ce7;
+    
+
+}
+
+ */
+
+ a:hover {
+    color: #107ce7;
+    transition: .2s ease-in-out;
+
+}
+
+#smalltxt{
+
+    font-size: 0.8rem;
+}
