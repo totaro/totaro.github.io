@@ -1,186 +1,352 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Totaro - Home - JS/HTML/CSS/REACT/HTMX/ANGULAR/TAILWIND/SVELTE/CHATGPT - FrontEnd/UX/UI - Developer/Designer - Playground</title>
-</head>
-<body><a id="top"></a>
+    <title>Totaro Portfolio - Home - JS/HTML/CSS/REACT/HTMX/ANGULAR/TAILWIND/SVELTE/CHATGPT - FrontEnd/UX/UI - Developer/Designer - Playground</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <div class="top"></div>
-    <div><header id="header">
-        <div class="navbar">
-            <div class="logo"><a href="https://totaro.github.io/">Totaro</a></div>
-            <ul class="links">
-                <li><a href="https://totaro.github.io/">Home</a></li>
-                <li><a href="https://totaro.github.io/lab/">The Lab</a></li>
-                <li><a href="https://totaro.github.io/motions/">Motions</a></li>
-                <li><a href="https://totaro.github.io/weather/">Weather</a></li>
-                <li><a href="https://totaro.github.io/dictionary/">Dictionary</a></li>
-                <li><a href="https://totaro.github.io/randomphotogallery/">Photo Gallery</a></li>
-                <li><a href="https://totaro.github.io/digitalclock/">Digital Clock</a></li>
-                <li><a href="https://totaro.github.io/reactbase/">Todo List</a></li>
-            </ul>
-            
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body><a id="top"></a>
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden"
+      style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); font-family: Inter, sans-serif;"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#111418]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
             </div>
+            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Totaro Portfolio</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#111418] text-sm font-medium leading-normal" href="#aboutme">About</a>
+              <a class="text-[#111418] text-sm font-medium leading-normal" href="#projects">Projects</a>
+              <a class="text-[#111418] text-sm font-medium leading-normal color:font-black" href="#new">New</a>
+              
+              <!--
+            <div class="flex gap-2">
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+
+                <div class="text-[#111418]" data-icon="GithubLogo" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#111418]" data-icon="LinkedinLogo" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          -->
+
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhTwZV1LvoEuYL0o7oN8-aW_Dv0FqHnWaCRN-3BMPJeX4G5QqRJpstAAS80pwtcQi83OxDofi2nhqJzCNQl71F9zJB7Lg8M5g6kQUY7gklLaKFdhE00priISWoWI4fbLFUwLVCSJlQjEC3wwC07kGlrPAlUdvHotE_0NCSjdedLFJTplUMTAQEU4rbspi3CO0nKK37qgDHY2NF6SqFMmnmX9cV6vQNMD--05VSvjfUD7TXR20yufhPNYjIsCkIWYXaAw2Mv7KPYY4K");'
+                ></div>
+                <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-[#111418] text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      This is Totaro, a FrontEnd Developer
+                    </h1>
+                    <h2 class="text-[#111418] text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      This is the spot, the sandbox, the playgound where I play with different web techniques.<!--I specialize in creating responsive and user-friendly websites. --> Explore my portfolio to see my latest projects and learn more about my skills and experience.
+                    </h2>
+                  </div>
+                  
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1773cf] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]" onclick="location.href='#projects'"
+                  >
+                    <span class="truncate">View Projects</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a id="new"></a>
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New! Check out my latest work!</h2>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox" checked
+                  class="h-5 w-5 rounded border-[#dce0e5] border-2 bg-transparent text-[#1773cf] checked:bg-[#1773cf] checked:border-[#1773cf] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dce0e5] focus:outline-none"
+                />
+                <p class="text-[#111418] text-base font-normal leading-normal">Updated UI for this portfolio site using Stitch, AI design tool from Google.<span id="smalltxt"><br>(You can see old design <a href="https://totaro.github.io/indexold.html/" id="link" target=”_blank” alt="AI Artistry">here <i class="fa-solid fa-arrow-up-right-from-square"></i></a> )</span></p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox" checked
+                  class="h-5 w-5 rounded border-[#dce0e5] border-2 bg-transparent text-[#1773cf] checked:bg-[#1773cf] checked:border-[#1773cf] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dce0e5] focus:outline-none"
+                />
+                <p class="text-[#111418] text-base font-normal leading-normal">AI-assisted software development using tools such as ChatGPT for prompt engineering, Google AI Studio (Gemini) for application development, and Vercel for build, deployment, and application hosting. App compairs chances of weather history: <a href="https://chrono-weather.vercel.app/" id="link" target=”_blank” alt="ChronoWheather">ChronoWeather <i class="fa-solid fa-arrow-up-right-from-square"></i></a> </p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox" checked
+                  class="h-5 w-5 rounded border-[#dce0e5] border-2 bg-transparent text-[#1773cf] checked:bg-[#1773cf] checked:border-[#1773cf] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dce0e5] focus:outline-none"
+                />
+                <p class="text-[#111418] text-base font-normal leading-normal">Showcasing my AI Artistry: <a href="https://totaro.github.io/aiartistry/" id="link" target=”_blank” alt="AI Artistry">AI Artistry <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox" checked
+                  class="h-5 w-5 rounded border-[#dce0e5] border-2 bg-transparent text-[#1773cf] checked:bg-[#1773cf] checked:border-[#1773cf] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dce0e5] focus:outline-none"
+                />
+                <p class="text-[#111418] text-base font-normal leading-normal">Figma UX/UI design examples: Landing Page, User Flows, Sitemap, Wireframing and Mobile App Design: <a href="https://www.figma.com/design/4Si0OOFZHA7M3LNq1hFiUY/FigmaEssentials?node-id=0%3A1&t=c7t6z3wiDK4cKpK6-1" target=”_blank” id="link" alt="Figma examples">Figma examples <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox" checked
+                  class="h-5 w-5 rounded border-[#dce0e5] border-2 bg-transparent text-[#1773cf] checked:bg-[#1773cf] checked:border-[#1773cf] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dce0e5] focus:outline-none"
+                />
+                <p class="text-[#111418] text-base font-normal leading-normal">Tableau, data visualization tool for data analysis: <a href="https://public.tableau.com/app/profile/to.ro/vizzes" id="link" target=”_blank” alt="Tableau">Tableau <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+              </label>
+            </div>
+
+            <div class="flex justify-end overflow-hidden px-5 pb-5">
+                <p class="backtotop"><a href="#top" id="link">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
+              
+            </div>
+
+            <a id="projects"></a>
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Projects</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <a href="https://totaro.github.io/lab/" target="_blank">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("images/lab.png");'
+                ></div>
+                <div>
+                    
+                  <p class="text-[#111418] text-base font-medium leading-normal">The Lab</p>
+                  <p class="text-[#637588] text-sm font-normal leading-normal">
+                    The Lab is the place where I play with new miscellaneous things with Html/ Css/ JavaScript/ Htmx/ Angular/ Tailwind CSS/ Svelte/ ChatGPT/ OpenAI. </p>
+                    
+                  </p>
+                </div></a>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <a href="https://totaro.github.io/motions/" target="_blank">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("images/motions.png");'
+                ></div>
+                <div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Motions</p>
+                  <p class="text-[#637588] text-sm font-normal leading-normal">
+                    My playground/sandbox where I play with different kinds of web motions and animations. Focuses mainly on web motions and animations so is not fully responsive. (JavaScript/ Html/ Css/ Gsap)
+                  </p>
+                </div></a>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <a href="https://totaro.github.io/weather/" target="_blank">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("images/weather.png");'
+                ></div>
+                <div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Weather</p>
+                  <p class="text-[#637588] text-sm font-normal leading-normal">
+                    Weather App with fetch API request from Open Weather Api (https://openweathermap.org/ https://api.openweathermap.org) including eventListener that listens keyboard (Enter) and searchbutton for wanted city to find current weather forecast. (JavaScript/ Html/ Css)
+                  </p>
+                </div><a></a>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <a href="https://totaro.github.io/dictionary/" target="_blank">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("images/dictionary.png");'
+                ></div>
+                <div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">English Dictionary</p>
+                  <p class="text-[#637588] text-sm font-normal leading-normal">
+                    English dictionary with fetch API request from Free Dictionary API (https://dictionaryapi.dev/ https://api.dictionaryapi.dev) including async/await and try..catch error handling plus eventListener that listens keyboard for wanted word to find. (JavaScript/ Html/ Css)
+                  </p>
+                </div></a>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <a href="https://totaro.github.io/randomphotogallery/" target="_blank">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("images/photogallery.png");'
+                ></div>
+                <div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">PhotoGallery</p>
+                  <p class="text-[#637588] text-sm font-normal leading-normal">
+                    Using random pic service (https://picsum.photos/) to make ramdom photogallery site and using button with addEventListener to add new random imagegrid below previous images. (JavaScript/ Html/ Css)
+                  </p>
+                </div></a>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <a href="https://totaro.github.io/digitalclock/" target="_blank">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("images/digitalclock.png");'
+                ></div>
+                <div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Digital Clock</p>
+                  <p class="text-[#637588] text-sm font-normal leading-normal">
+                    Digital Clock using Html, Css and JavaScript
+                  </p>
+                </div></a>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <a href="https://totaro.github.io/reactbase/" target="_blank">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("images/todolist.png");'
+                ></div>
+                <div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">ToDo List</p>
+                  <p class="text-[#637588] text-sm font-normal leading-normal">
+                    ToDo List with React using useState, useEffect and LocalStorage. React/Html/Css.
+                  </p>
+                </div></a>
+              </div>
+            </div>
+
+            <div class="flex justify-end overflow-hidden px-5 pb-5">
+                <p class="backtotop"><a href="#top" id="link">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
+              
+            </div>
+
+            <a id="aboutme"></a>
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
+            <p class="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              <!--I am a passionate web developer with a focus on front-end technologies. I enjoy building interactive and visually appealing websites that provide a great user
+              experience. My expertise includes HTML, CSS, JavaScript, and various front-end frameworks.-->
+              
+              My name is Tommi R., an Information Technology Engineer from Tampere, a hungry and highly motivated professional with solid industry experience, currently available on the open market. My previous roles have included FrontEnd / UX / UI design and implementation for websites, as well as software development.<br><br>
+
+Most recently, I worked a software developer, where my responsibilities included Full Stack development for customer projects and creating HTML element prototypes as part of the UX/UI team.<br><br>
+
+Prior to this, I have 20 years of professional experience in UX/UI design, working under titles such as Concept Designer and Web Designer. In these roles, I was independently responsible for the design and implementation of websites as well as their visual identity and graphic appearance.<br><br>
+
+In interface design, my top priorities are usability and clarity, ensuring that users can logically and easily find what they are looking for, while still maintaining a pleasant and visually appealing design.<br><br>
+
+I have continuously developed my professional expertise through both formal training and self-directed learning in areas such as FrontEnd / UX / UI, software development, integrations, cloud services, and data science.<br><br>
+
+My skill set includes ChatGPT / OpenAI, HTMX, CSS / JavaScript–based web motion techniques, Figma, Angular, Tailwind CSS, and Svelte. In addition, I have completed the University of Helsinki’s Elements of AI online course, and I am proficient in the data visualization tool Tableau. I have also developed a strong interest in AI-generated art, producing content such as videos, audio, and images using various tools.<br><br>
+
+I have further expanded my expertise in data science through the Python for Data Science course, where I processed and analyzed real-world datasets using Python, Pandas, and Jupyter Notebook. I have also familiarized myself with Microsoft’s Azure AI ecosystem through the Microsoft Learn Challenge: Build AI apps with Microsoft Azure services. Most recently, I have gained experience in AI-assisted software development (“vibe coding”), using tools such as ChatGPT for prompt engineering, Google AI Studio (Gemini) for application development, and Vercel for build, deployment, and application hosting.<br><br>
+
+            </p>
+
+            <!--
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
+            <p class="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I'm always open to new opportunities and collaborations. Feel free to reach out to me through the contact form below or connect with me on social media.
+            </p>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111418] text-base font-medium leading-normal pb-2">Name</p>
+                <input
+                  placeholder="Your Name"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-14 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111418] text-base font-medium leading-normal pb-2">Email</p>
+                <input
+                  placeholder="Your Email"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-14 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#111418] text-base font-medium leading-normal pb-2">Message</p>
+                <textarea
+                  placeholder="Your Message"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] min-h-36 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1773cf] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Send Message</span>
+              </button>
+            </div>
+            -->
+
+            <div class="flex justify-end overflow-hidden px-5 pb-5">
+                <p class="backtotop"><a href="#top" id="link">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
+              <!--
+                <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 bg-[#1773cf] text-white text-base font-bold leading-normal tracking-[0.015em] min-w-0 px-2 gap-4 pl-4 pr-6"
+              >
+                <div class="text-white" data-icon="ArrowUp" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              -->
+            </div>
+          </div>
         </div>
-
-        <div class="dropdown_menu">
-            <li><a href="https://totaro.github.io/">Home</a></li>
-            <li><a href="https://totaro.github.io/lab/">The Lab</a></li>
-            <li><a href="https://totaro.github.io/motions/">Motions</a></li>
-            <li><a href="https://totaro.github.io/weather/">Weather</a></li>
-            <li><a href="https://totaro.github.io/dictionary/">Dictionary</a></li>
-            <li><a href="https://totaro.github.io/randomphotogallery/">Photo Gallery</a></li>
-            <li><a href="https://totaro.github.io/digitalclock/">Digital Clock</a></li>
-            <li><a href="https://totaro.github.io/reactbase/">Todo List</a></li>
-          </div>
-    </header>
-    </div>
-    <div>
-    </div>
-    </div>
-    
-    <main class="main"><section id="hero"><h1>Welcome to my portfolio!</h1><p class="herop">I am FrontEnd/UX/UI -developer/designer and this is the spot where I play with JavaScript/React/Html/Css/ Htmx/Angular/ Tailwind CSS/Svelte/ ChatGPT/OpenAI. Click the thumbnails below for details or go straight to App from the menu.</p><p class="herop">Also, check out my Figma UX/UI design examples: Landing Page, User Flows, Sitemap, Wireframing and Mobile App Design. Go and look: <a href="https://www.figma.com/design/4Si0OOFZHA7M3LNq1hFiUY/FigmaEssentials?node-id=0%3A1&t=c7t6z3wiDK4cKpK6-1" target=”_blank” alt="Figma examples">Figma examples <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-        <p class="herop">I also experimented Tableau, data visualization tool for data analysis.<a href="https://public.tableau.com/app/profile/to.ro/vizzes" target=”_blank” alt="Tableau">Tableau <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-
-        <p class="herop">New! Showcasing my AI Artistry: <a href="https://totaro.github.io/aiartistry/" target=”_blank” alt="AI Artistry">AI Artistry <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-        <div class="thumps">
-
-            <div><a href="#lab">
-                <div class="thump7"></div>
-                <div class="thumptxt">The Lab</div></a>
-            </div> 
-            <div><a href="#motions">
-                <div class="thump6"></div>
-                <div class="thumptxt">Motions</div></a>
-            </div>
-            
-            <div><a href="#weather">
-                <div class="thump"></div>
-                <div class="thumptxt">Weather</div></a>
-            </div>
-
-            <div><a href="#dictionary">
-                <div class="thump2"></div>
-                <div class="thumptxt">Dictionary</div></a>
-            </div>
-
-            
-            <div><a href="#photogallery">
-                <div class="thump4"></div>
-                <div class="thumptxt">Gallery</div></a>
-            </div>
-
-            <div><a href="#digitalclock">
-                <div class="thump3"></div>
-                <div class="thumptxt">Clock</div></a>
-            </div>
-
-            <div><a href="#todolist">
-                <div class="thump5"></div>
-                <div class="thumptxt">ToDo</div></a>
-            </div>
-
-        </div>
-    </p></section></main>
-    
-    <a id="lab"></a>
-    <div class="content">
-        <div class="box img7"></div>
-            <div class="box"><div class="card"><h1>The Lab</h1>
-                <p>The Lab is the place where I play with new miscellaneous things with Html/Css/JavaScript/Htmx/ Angular/ Tailwind CSS/Svelte/ ChatGPT/OpenAI. </p>
-                <p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
-                <p class="backtotop"><a href="https://totaro.github.io/lab/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                </div>
-            </div>
-           
-       </div> 
-
-    <a id="motions"></a>
-    <div class="content">
-        <div class="box img6"></div>
-            <div class="box"><div class="card"><h1>Motions</h1>
-                <p>My playground/sandbox where I play with different kinds of web motions and animations. Focuses mainly on web motions and animations so is not fully responsive. (JavaScript/Html/Css/Gsap)</p>
-                <p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
-                <p class="backtotop"><a href="https://totaro.github.io/motions/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                </div>
-            </div>
-           
-       </div> 
-
-    <a id="weather"></a>
-    <div class="content">
-        <div class="box img2"></div>
-            <div class="box"><div class="card"><h1>Weather</h1>
-                <p>Weather App with fetch API request from Open Weather Api (https://openweathermap.org/ https://api.openweathermap.org) including eventListener that listens keyboard (Enter) and searchbutton for wanted city to find current weather forecast. (JavaScript/Html/Css)</p>
-                <p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
-                <p class="backtotop"><a href="https://totaro.github.io/weather/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                </div>
-            </div>
-           
-       </div> 
-
-       <a id="dictionary"></a>
-    <div class="content">
-        <div class="box img3"></div>
-            <div class="box"><div class="card"><h1>English Dictionary</h1>
-                <p>English dictionary with fetch API request from Free Dictionary API (https://dictionaryapi.dev/ https://api.dictionaryapi.dev) including async/await and try..catch error handling plus eventListener that listens keyboard for wanted word to find. (JavaScript/Html/Css)</p>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://github.com/totaro" target="_blank">
+                  <div class="text-[#637588]" data-icon="GithubLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
                 
-                <p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
-
-                <p class="backtotop"><a href="https://totaro.github.io/dictionary/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                
-                </div>
-            </div>
-           
-       </div> 
-
-       
-      
-
-       <a id="photogallery"></a>
-       <div class="content">
-        <div class="box img4"></div>
-            <div class="box"><div class="card"><h1>PhotoGallery</h1>
-                <p>Using random pic service (https://picsum.photos/) to make ramdom photogallery site and using button with addEventListener to add new random imagegrid below previous images. (JavaScript/Html/Css)</p><p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
-                <p class="backtotop"><a href="https://totaro.github.io/randomphotogallery/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                </div>
-            </div>
-           
-       </div> 
-
-       <a id="digitalclock"></a>
-       <div class="content">
-        <div class="box img"></div>
-                   <div class="box"><div class="card"><h1>Digital Clock </h1>
-                   <p>Digital Clock using Html, Css and JavaScript</p><p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
-                   <p class="backtotop"><a href="https://totaro.github.io/digitalclock/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                   </div>
-               </div>
-               
+              </div>
+              <p class="text-[#637588] text-base font-normal leading-normal">© 2026 Totaro. All rights reserved.</p>
+            </footer>
           </div>
-
-          <a id="todolist"></a>
-       <div class="content">
-        <div class="box img5"></div>
-                   <div class="box"><div class="card"><h1>ToDo List</h1>
-                   <p>ToDo List with React using useState, useEffect and LocalStorage. React/Html/Css. </p><p class="backtotop"><a href="#top">Back to top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
-                   <p class="backtotop"><a href="https://totaro.github.io/reactbase/">Go to App <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                   </div>
-               </div>
-               
-          </div>
-
-
-    
-         
-    
-    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-</body>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
