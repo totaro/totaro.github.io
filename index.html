@@ -137,14 +137,15 @@
 <b>Overview</b><br><br>
 A real-time tracking and historical archive platform for NASA’s Artemis space program. Instead of relying on a single LLM, this project was engineered using a specialized, multi-model AI workflow—treating different AI models as specialized agents (Researcher, Designer, Architect, Developer) to ensure factual accuracy, bespoke design, and clean code.<br><br>
 <b>Tech Stack & Tools</b><br><br>
-React, Tailwind CSS, Google AI Studio, Gemini 1.5 Pro, Claude 3, NotebookLM, ChatGPT.<br><br>
+React, Tailwind CSS, Google AI Studio, Gemini 1.5 Pro, Gemini Gems, Claude 3, NotebookLM, ChatGPT.<br><br>
 <b>The AI-Orchestrated Workflow</b><br><br>
 
 <b>- Data Sourcing (ChatGPT & NotebookLM):</b> Engineered optimized prompts via ChatGPT to instruct NotebookLM. NotebookLM then aggregated and synthesized verified, science-based telemetry and historical data into a master "Research Note," eliminating hallucinations.<br><br>
 <b>- Design System (Claude.ai):</b> Provided Claude with visual references to generate a comprehensive design.md file. This established the project's modern, SaaS-inspired typography, color palette, and UI rules, avoiding generic "AI aesthetics."<br><br>
 <b>- Information Architecture (Google Gemini):</b> Fed the NotebookLM research into Gemini, prompting it as a Senior Information Architect to map out a cohesive, single-page user flow and content strategy.<br><br>
 <b>- Initial Code Generation (Gemini Canvas):</b> Merged the architecture, research data, and design specs into Gemini Canvas to generate the foundational React/Tailwind codebase, including responsive layouts and smooth-scroll navigation.<br><br>
-<b>- Final Polish & Logic (Google AI Studio):</b> Refined the React components and implemented complex dynamic date logic. The application automatically transitions its UI, telemetry data, and copy from an "Active Mission" state to a "Historical Archive" state based on real-world splashdown dates.
+<b>- Final Polish & Logic (Google AI Studio):</b> Refined the React components and implemented complex dynamic date logic. The application automatically transitions its UI, telemetry data, and copy from an "Active Mission" state to a "Historical Archive" state based on real-world splashdown dates.<br><br>
+<b>- Live Asset Scouting: </b>Deployed a custom Gemini Gem ("Mission Archivist") to query live NASA databases, extracting real-time high-res imagery and official captions as the mission unfolds.
 <br><br>
 
 <b>Key Features</b><br><br>
@@ -425,8 +426,7 @@ A blazing-fast, highly customized static site. This project demonstrates that tr
             and Vercel for build, deployment, and application hosting. And addition to the AI-assisted software
             development, I updated UI for my portfolio site (this one) using Stitch, AI design tool from Google. Other
             tools I have used in my AI-assisted software development projects are: Claude (codeanalysis and Co-pilot),
-            Google Whisk (AI-image generation tool), Google Flow (AI filmmaking tool) and Firebase studio (application
-            development).<br><br>
+            Google Whisk (AI-image generation tool), Google Flow (AI filmmaking tool), Firebase studio (application development), NotebookLM (AI Research tool) and Gemini Gems (AI Assistant).<br><br>
 
             Check also my <a
                   href="https://www.linkedin.com/in/tommirouvali/" id="link" target=”_blank”
