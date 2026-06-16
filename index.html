@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Totaro Portfolio - Home - JS/HTML/CSS/React/HTMX/Angular/Tailwind Css/Svelte/ChatGPT/Google AntiGravity/Google AI Studio/Claude/Google Whisk/Google Flow/Google Stitch/Firebase Studio/Vercel - FrontEnd/UX/UI - AI - 
+  <title>Totaro Portfolio - Home - JS/HTML/CSS/React/HTMX/Angular/Tailwind Css/Svelte/ChatGPT/Google AntiGravity/Google AI Studio/Claude/Google Whisk/Google Flow/Google Stitch/Firebase Studio/Vercel/OpenAI Codex/Google Collab - FrontEnd/UX/UI - AI - 
     Developer/Designer - Playground</title>
   <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
@@ -130,6 +130,46 @@
             New! Check
             out my latest work!</h2>
           <div class="px-4">
+             <label class="flex gap-x-3 py-3 flex-row">
+              <input type="checkbox" checked
+                class="h-5 w-5 rounded border-[#dce0e5] border-2 bg-transparent text-[#1773cf] checked:bg-[#1773cf] checked:border-[#1773cf] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dce0e5] focus:outline-none" />
+              <p class="text-[#111418] text-base font-normal leading-normal"><b>Case Study: Agentic Codex vs. Traditional Pandas</b><br><br>
+
+                <b>Project Overview</b><br><br>
+                As data systems integrate generative AI, a critical shift is happening. The ultimate data superpower is no longer just writing code—it is <b>data governance and auditing</b>. <br><br>
+
+                This project explores a dual-paradigm execution of an end-to-end e-commerce inventory pipeline built on 18,000+ rows of ASOS sales data. The core objective was to calculate "Phantom Revenue"—sales lost due to out-of-stock sizes—and pinpoint vulnerable inventory lines. <br><br>
+
+                I built the system twice: once via deterministic manual scripting (Python/Pandas/Matplotlib) in <b>Google Colab</b>, and once via an autonomous AI agent in <b>OpenAI Codex</b>.<br><br>
+
+                <b>The Technical Challenge: Mitigating AI Logic Drift</b><br><br>
+                This project highlights a massive warning for the industry: <b>blindly trusting an AI agent's initial analytics output would have delivered corrupted business intelligence to stakeholders.</b> <br><br>
+
+                During structural cross-verification against my hand-coded ground truth baseline, several critical upstream errors were discovered in the autonomous AI sandbox:<br><br>
+                <b>- Row Retention Drift:</b> The AI retained 30,827 rows instead of the clean 18,378 baseline due to lax text-dropping filters.<br><br>
+                <b>- Semantic Blindness:</b> The AI categorized the marketplace host ("ASOS") as a product brand, generating massive statistical noise.<br><br>
+                <b>- Mathematical Flattening:</b> The agent compressed stockout averages upstream, artificially placing high-risk bottleneck brands into a safe inventory zone.<br><br>
+
+                <b>The Solution: Code Injection & Guardrails</b><br><br>
+                To force data alignment without endless prompt guessing, I utilized a <b>hybrid engineering strategy</b>:<br><br>
+                <b>1. Data Re-Anchoring:</b> Authored targeted parameter adjustments instructing the sandbox environment to purge platform strings.<br><br>
+                <b>2. Code Injection:</b> Directly injected my manual Pandas `.groupby().agg()` code blocks from Google Colab into the agent's memory, overriding its internal mathematical assumptions.<br><br>
+                <b>3. Annotation Overrides:</b> Hardcoded coordinate labels to bypass strict layout boundaries, bringing both visual layouts into alignment.<br><br>
+
+
+                <b>Business & Technical Outcomes</b><br><br>
+                <b>- Identical Final Deliverables:</b> Both pipelines now cleanly output an optimized, 1,000-row sample repository subset and a matching 4-quadrant strategic inventory chart.<br><br>
+                <b>- Target Outliers Isolated:</b> Topshop, Mango, and Pull&Bear were successfully identified as major phantom revenue drivers, enabling clear, actionable inventory depth recommendations.<br><br>
+                <b>- The Efficiency Metric:</b> While manual architecture took roughly 45 minutes, the guided AI workflow required under 5 minutes.<br><br><br>
+
+                <b>Conclusion:</b> AI agents represent a massive 80% leap forward in development velocity. However, foundational engineering frameworks and analytical intuition remain mandatory to audit, cross-verify, and govern automated environments safely.<br><br>
+
+                Click the link to read the full comparative write-up and see the data logs on my repository on GitHub!
+
+                <br><br><a href="https://github.com/totaro/agentic-codex-vs-traditional-pandas" id="link" target=”_blank”
+                  alt="Artemis II Mission"> Agentic Codex vs. Traditional Pandas <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+            </label>
             <label class="flex gap-x-3 py-3 flex-row">
               <input type="checkbox" checked
                 class="h-5 w-5 rounded border-[#dce0e5] border-2 bg-transparent text-[#1773cf] checked:bg-[#1773cf] checked:border-[#1773cf] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#dce0e5] focus:outline-none" />
@@ -426,7 +466,7 @@ A blazing-fast, highly customized static site. This project demonstrates that tr
             and Vercel for build, deployment, and application hosting. And addition to the AI-assisted software
             development, I updated UI for my portfolio site (this one) using Stitch, AI design tool from Google. Other
             tools I have used in my AI-assisted software development projects are: Claude (codeanalysis and Co-pilot),
-            Google Whisk (AI-image generation tool), Google Flow (AI filmmaking tool), Firebase studio (application development), NotebookLM (AI Research tool) and Gemini Gems (AI Assistant).<br><br>
+            Google Whisk (AI-image generation tool), Google Flow (AI filmmaking tool), Firebase studio (application development), NotebookLM (AI Research tool), Gemini Gems (AI Assistant), Google Colab (Data Analysis and Visualization) and OpenAI Codex (AI-assisted software development, Data Analysis and Visualization).<br><br>
 
             In addition to my experience in the IT sector, I have held a wide range of roles, including event construction, carpet installation, exhibition building, event staffing, restaurant work, and warehouse operations. In all these positions, I have become accustomed to working flexibly with diverse individuals and ever-changing teams.<br><br>
 
