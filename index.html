@@ -145,7 +145,7 @@
                 <b>The Technical Challenge: Mitigating AI Logic Drift</b><br><br>
                 This project highlights a massive warning for the industry: <b>blindly trusting an AI agent's initial analytics output would have delivered corrupted business intelligence to stakeholders.</b> <br><br>
 
-                During structural cross-verification against my hand-coded ground truth baseline, several critical upstream errors were discovered in the autonomous AI sandbox:<br><br>
+                During structural cross-verification against hand-coded ground truth baseline, several critical upstream errors were discovered in the autonomous AI sandbox:<br><br>
                 <b>- Row Retention Drift:</b> The AI retained 30,827 rows instead of the clean 18,378 baseline due to lax text-dropping filters.<br><br>
                 <b>- Semantic Blindness:</b> The AI categorized the marketplace host ("ASOS") as a product brand, generating massive statistical noise.<br><br>
                 <b>- Mathematical Flattening:</b> The agent compressed stockout averages upstream, artificially placing high-risk bottleneck brands into a safe inventory zone.<br><br>
@@ -153,7 +153,7 @@
                 <b>The Solution: Code Injection & Guardrails</b><br><br>
                 To force data alignment without endless prompt guessing, I utilized a <b>hybrid engineering strategy</b>:<br><br>
                 <b>1. Data Re-Anchoring:</b> Authored targeted parameter adjustments instructing the sandbox environment to purge platform strings.<br><br>
-                <b>2. Code Injection:</b> Directly injected my manual Pandas `.groupby().agg()` code blocks from Google Colab into the agent's memory, overriding its internal mathematical assumptions.<br><br>
+                <b>2. Code Injection:</b> Directly injected manual Pandas `.groupby().agg()` code blocks from Google Colab into the agent's memory, overriding its internal mathematical assumptions.<br><br>
                 <b>3. Annotation Overrides:</b> Hardcoded coordinate labels to bypass strict layout boundaries, bringing both visual layouts into alignment.<br><br>
 
 
