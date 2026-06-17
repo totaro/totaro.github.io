@@ -9,8 +9,8 @@ Welcome to my central deployment hub. This repository drives my public portfolio
 ## 🛠️ Technology Stack & Core Competencies
 
 *   **Frontend Engineering:** JavaScript (ES6+), React, Angular, Svelte, HTMX, HTML5, CSS3, Tailwind CSS.
-*   **Data Science & Analytics:** Python, Pandas, Tableau (Business Intelligence, Data Visualization).
-*   **AI Integration & Auditing:** OpenAI Codex, ChatGPT API Systems, Advanced Prompt Engineering, LLM Sandboxing.
+*   **Data Science & Analytics:** Python, Pandas, Jupyter Notebook, Tableau (Business Intelligence, Data Visualization), Google Colab.
+*   **AI Integration & Auditing:** OpenAI Codex, ChatGPT API Systems, Gemini, Claude, Advanced Prompt Engineering, LLM Sandboxing.
 *   **Product & UI/UX Design:** Figma (Wireframing, User Flows, Prototyping, Mobile App & Landing Page UI).
 
 ---
