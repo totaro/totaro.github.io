@@ -18,12 +18,12 @@ Welcome to my central deployment hub. This repository drives my public portfolio
 ## 📂 Highlighted Repositories & Featured Projects
 
 ### 1. 📈 Data & AI Governance
-*   **[agentic-codex-vs-traditional-pandas](https://github.com)**
+*   **[agentic-codex-vs-traditional-pandas](https://github.com/totaro/agentic-codex-vs-traditional-pandas)**
     *   *The Showdown:* A comparative data science case study executing an inventory analytics pipeline on 18k ASOS records. 
     *   *Key Value:* Contrasts manual Python/Pandas logic against autonomous OpenAI Codex agents, showcasing advanced strategies for debugging and correcting AI logic drift.
 
 ### 2. 🛏️ Full-Stack & AI Software Engineering
-*   **[conferenceroom](https://github.com)**
+*   **[conferenceroom](https://github.com/totaro/conferenceroom)**
     *   *The System:* An AI-assisted production-ready Conference Room Reservation system.
     *   *Key Value:* Features an evolutionary architecture transitioning from a Vanilla JS MVP into a scalable component-driven React single-page application supported by a Node.js/Express backend.
 
@@ -40,4 +40,4 @@ Beyond core programming, this hub integrates cross-discipline digital design eco
 
 ## 📫 Connect & Collaborate
 Feel free to dive into the code modules or check out the live sandbox builds.
-*   **GitHub Profile:** [@totaro](https://github.com)
+*   **GitHub Profile:** [@totaro](https://github.com/totaro)
