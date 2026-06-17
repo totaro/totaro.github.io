@@ -2,7 +2,7 @@
 
 Welcome to my central deployment hub. This repository drives my public portfolio website and serves as an active research environment for modern frontend technologies, data orchestration pipelines, UI/UX architecture, and generative AI systems.
 
-🔗 **Live Portfolio Site:** [totaro.github.io](https://github.io)
+🔗 **Live Portfolio Site:** [totaro.github.io](https://totaro.github.io)
 
 ---
 
@@ -26,15 +26,6 @@ Welcome to my central deployment hub. This repository drives my public portfolio
 *   **[conferenceroom](https://github.com)**
     *   *The System:* An AI-assisted production-ready Conference Room Reservation system.
     *   *Key Value:* Features an evolutionary architecture transitioning from a Vanilla JS MVP into a scalable component-driven React single-page application supported by a Node.js/Express backend.
-
----
-
-## 🧪 Active Playground Directories
-
-This portfolio is an evolving testing environment for lightweight frameworks and design logic:
-*   **Framework Testing Hub (`index.html`, `index20.html`):** Evaluating state isolation and template rendering speeds across React, Angular, Svelte, and HTMX.
-*   **AI Conversational Tools (`index_qabot.html`):** Prototyping inline asynchronous UI modules that integrate with generative chat models.
-*   **Visual Assets (`/images`, `/style.css`):** Custom stylesheets and media assets establishing a cohesive responsive design system.
 
 ---
 
